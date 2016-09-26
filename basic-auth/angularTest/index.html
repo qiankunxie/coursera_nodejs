@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example - example-directive-transclusion-scope-production</title>
+  
+
+  <script src="angular.min.js"></script>
+  <script src="core.js"></script>
+  
+
+  
+</head>
+<body ng-app="myapp">
+  <div ng-controller="Controller1">
+  {{name}}
+</div>
+  <div ng-controller="Controller2">
+    Check out the contents, {{name}}!
+    <button ng-click="emit()">
+  Test
+	</button>
+  </div>
+</body>
+</html>
